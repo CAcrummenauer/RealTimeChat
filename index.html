@@ -13,12 +13,19 @@
 <body>
     <a id="view-code" href="https://codepen.io/virgilpana/pen/ZYZXgP" target="_blank">VIEW CODE</a>
     <div id="chatbox">
+        <div id="login">
+            
+        </div>
         <div id="friendslist">
-            <!-- <div id="topmenu">
-                <span class="friends"></span>
+            <div id="topmenu">
+                <button id="google">Google</button>
+                <button id="github">Github</button>
+                <!-- <span class="friends"></span>
                 <span class="chats"></span>
-                <span class="history"></span>
-            </div> -->
+                <span class="history"></span> -->
+            </div>
+
+
 
             <div id="friends">
                 <div class="friend">
@@ -30,16 +37,16 @@
                     <div class="status available"></div>
                 </div>
 
-                <div class="friend">
+                <!-- <div class="friend">
                     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/5_copy.jpg" />
                     <p>
                         <strong> Darnell Strickland</strong>
                         <span>darnellstrickland@gmail.com</span>
-                    </p>
-                    <!-- <div class="status inactive"></div> -->
-                    <!-- <div class="status away"></div> -->
-                    <!-- <div class="status inactive"></div> -->
-                </div>
+                    </p> -->
+                <!-- <div class="status inactive"></div> -->
+                <!-- <div class="status away"></div> -->
+                <!-- <div class="status inactive"></div> -->
+                <!-- </div> -->
 
                 <div id="search">
                     <input type="text" id="searchfield" value="Search contacts..." />
@@ -116,6 +123,8 @@
         </div>
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    <script src="js/firebase.js"></script>
     <script src="js/js.js"></script>
 </body>
 
