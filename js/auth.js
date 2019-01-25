@@ -3,7 +3,7 @@ const github = document.getElementById('github');
 
 google.onclick = function () {
     firebase.auth().signInWithPopup(new firebase.auth.GoogleAuthProvider()).then(function (user) {
-
+        createUser();
     }).catch(function (error) {
         console.log(error);
     });
@@ -11,7 +11,7 @@ google.onclick = function () {
 
 github.onclick = function () {
     firebase.auth().signInWithPopup(new firebase.auth.GithubAuthProvider()).then(function (user) {
-        
+        createUser(); 
     }).catch(function (error) {
         consolel.log(error);
     });
