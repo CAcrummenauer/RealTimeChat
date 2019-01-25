@@ -24,5 +24,12 @@ firebase.auth().onAuthStateChanged(function (user) {
     } else {
         console.log('Deslogado!');
     }
-    loading.style.display = 'none';
 });
+
+logOut.onclick = function () {
+    firebase.auth().signOut().then(function() {
+        console.log('Saiu...');
+    }).catch(function (error) {
+        showError(error, 'Falha ao sair de sua conta');
+    });
+}
